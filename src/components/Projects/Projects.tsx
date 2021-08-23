@@ -125,7 +125,7 @@ export const Projects = ( props:projectProps) => {
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" href="">Github</Button>
+                                        <Button size="small" href="https://github.com/Nyo-ritu/kagondu_wk6_weatherapp.github">Github</Button>
                                         <Button size="small" href="">Heroku</Button>
                                     </CardActions>
                                 </Card>
@@ -144,7 +144,6 @@ export const Projects = ( props:projectProps) => {
                                     </CardActionArea>
                                     <CardActions>
                                         <Button size="small" href="">Github</Button>
-                                        <Button size="small" href="">Heroku</Button>
                                     </CardActions>
                                 </Card>
                             </Col>
@@ -161,7 +160,7 @@ export const Projects = ( props:projectProps) => {
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" href="">Github</Button>
+                                        <Button size="small" href="https://github.com/Nyo-ritu/kagondu_wk7_marvel_react.github">Github</Button>
                                         <Button size="small" href="">Heroku</Button>
                                     </CardActions>
                                 </Card>
@@ -179,7 +178,7 @@ export const Projects = ( props:projectProps) => {
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" href="">Github</Button>
+                                        <Button size="small" href="https://github.com/Nyo-ritu/kagondu_wk4_car_dealership.github">Github</Button>
                                     </CardActions>
                                 </Card>
                             </Col>
