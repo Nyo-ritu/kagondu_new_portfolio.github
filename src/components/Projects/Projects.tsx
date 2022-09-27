@@ -3,15 +3,16 @@ import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import notepad_image from '../../assets/images/notebook.jpg';
 import weatherapp from '../../assets/images/weather_api.png';
-import marvel from '../../assets/images/marvel2.png';
-import drones from '../../assets/images/drones2.png';
+import blog from '../../assets/images/blog.png';
 import carERD from '../../assets/images/Car_Dealership_ERD.jpg';
+import capstone from '../../assets/images/capstone.png';
 import { Container, Row, Col } from 'reactstrap';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
+
 
 
 interface projectProps{
@@ -29,7 +30,8 @@ const useStyles = makeStyles({
         alignItems: 'center',
     },
     logo:{
-        margin: '0 0 0 0.45em'
+        margin: '0 0 0 0.45em',
+        textDecoration: 'underline'
     },
     logo_a: {
         color: 'rgb(28,24,22)'
@@ -71,8 +73,10 @@ const useStyles = makeStyles({
     },
    
     media: {
-        height: '20em'
+        height: '20em',
+        
     },
+    
     main_text:{
         textAlign: 'center',
         position: 'relative',
@@ -125,25 +129,26 @@ export const Projects = ( props:projectProps) => {
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" href="https://github.com/Nyo-ritu/kagondu_wk6_weatherapp.github">Github</Button>
-                                        <Button size="small" href="">Heroku</Button>
+                                        <Button size="small"> <a href="https://github.com/Nyo-ritu/kagondu_wk6_weatherapp.github"target="_blank" rel="noreferrer noopener">Github</a></Button>
+                                        <Button size="small"> <a href="https://kw-weatherapp.onrender.com/"target="_blank" rel="noreferrer noopener">Render app</a></Button>
                                     </CardActions>
                                 </Card>
                             </Col>
                             <Col md sm>
-                                <Card className={classes.card_dims}>
+                                <Card className={classes.card_dims} >
                                     <CardActionArea>
                                     <CardMedia 
                                             className={classes.media}                                                                              
-                                            image={drones}
+                                            image={capstone}
                                     />
                                         
                                         <CardContent>
-                                            FireBase Hosted Drone Inventory
+                                            Heroku hosted Football stats app -Capstone Project
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" href="">Github</Button>
+                                        <Button size="small"> <a href="https://fb-api-capstone.herokuapp.com/"target="_blank" rel="noreferrer noopener">Heroku app</a></Button>
+                                        <Button size="small"> <a href="https://github.com/Nyo-ritu/kagondu_capstone.github"target="_blank" rel="noreferrer noopener">Github</a></Button>
                                     </CardActions>
                                 </Card>
                             </Col>
@@ -152,16 +157,16 @@ export const Projects = ( props:projectProps) => {
                                     <CardActionArea>
                                     <CardMedia 
                                             className={classes.media}                                                                                
-                                            image={marvel}
+                                            image={blog}
                                     />
                                         
                                         <CardContent>
-                                           Imsonia CRUD APP 
+                                           Django Blog and Translator App
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" href="https://github.com/Nyo-ritu/kagondu_wk7_marvel_react.github">Github</Button>
-                                        <Button size="small" href="">Heroku</Button>
+                                        <Button size="small"> <a href="https://github.com/Nyo-ritu/django_blog_and_translator_app.git"target="_blank" rel="noreferrer noopener">Github</a></Button>
+                                        <Button size="small"> <a href="https://kw-blog-translator.herokuapp.com"target="_blank" rel="noreferrer noopener">Heroku app</a></Button>
                                     </CardActions>
                                 </Card>
                             </Col>
@@ -174,11 +179,11 @@ export const Projects = ( props:projectProps) => {
                                     />
                                         
                                         <CardContent>
-                                            Prosgresql Database
+                                            Car Dealership ERD
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" href="https://github.com/Nyo-ritu/kagondu_wk4_car_dealership.github">Github</Button>
+                                        <Button size="small"> <a href="https://github.com/Nyo-ritu/kagondu_wk4_car_dealership.github" target="_blank" rel="noreferrer noopener">Github</a></Button>
                                     </CardActions>
                                 </Card>
                             </Col>
